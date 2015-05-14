@@ -1,8 +1,7 @@
-/* global Ember */
+import Ember from 'ember';
 
 export default Ember.TextField.extend({
   didInsertElement: function() {
-    // When clicked insert focus
     this.$().focus();
   }
 });

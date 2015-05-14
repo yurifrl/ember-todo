@@ -1,6 +1,6 @@
 <ul id="todo-list">
   {{#each todo in model itemController="todo"}}
-    <li {{bind-attr class="todo.isCompleted:completed todo.isEditing"}}>
+    <li {{bind-attr class="todo.isCompleted:completed todo.isEditing:editing"}}>
       {{#if todo.isEditing}}
         {{edit-todo
           class="edit"
